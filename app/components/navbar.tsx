@@ -10,7 +10,7 @@ const LINKS = [
 		to: '/#local',
 	},
 	{
-		name: 'Call for Papers',
+		name: 'CFP',
 		to: '/#cfp',
 	},
 	{
@@ -27,7 +27,7 @@ function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
 	return (
 		<Link
 			to={to}
-			className="text-gray-secondary hover:text-gray-primary hover:underline rounded-sm px-4 py-4 transition-colors"
+			className="underlined block whitespace-nowrap text-gray-secondary font-semibold hover:text-gray-primary focus:no-underline transition-colors"
 		>
 			{children}
 		</Link>
@@ -36,15 +36,22 @@ function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
 
 function Navbar() {
 	return (
-		<div className="flex w-full">
-			<ul className="flex space-x-4 w-full list-none m-0">
-				{LINKS.map(({ name, to }) => (
-					<li key={to} className="list-none m-0 p-0">
-						<NavLink to={to}>{name}</NavLink>
-					</li>
-				))}
-			</ul>
-		</div>
+		<section className="flex px-4 py-14">
+			<nav className="flex w-full max-w-8xl mx-auto items-center justify-between">
+				<div className="flex">
+					<Link to={'/'} title="4Dev Connect">
+						<img src="/logo.svg" alt="4Dev Connect" width={280} height={36} />
+					</Link>
+				</div>
+				<ul className="flex">
+					{LINKS.map(({ name, to }) => (
+						<li key={to} className="px-4 py-2">
+							<NavLink to={to}>{name}</NavLink>
+						</li>
+					))}
+				</ul>
+			</nav>
+		</section>
 	);
 }
 

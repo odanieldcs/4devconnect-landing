@@ -23,6 +23,9 @@ export default {
 				'orange-pink-light': '#F3EDEB',
 				'orange-pink-primary': '#F34B4B',
 			},
+			maxWidth: {
+				'8xl': '88.25rem',
+			},
 		},
 	},
 	plugins: [],
