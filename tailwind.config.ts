@@ -16,6 +16,13 @@ export default {
 					'Noto Color Emoji',
 				],
 			},
+			colors: {
+				'gray-light': '#F3F3F3',
+				'gray-secondary': '#4F4F54',
+				'gray-primary': '#13141A',
+				'orange-pink-light': '#F3EDEB',
+				'orange-pink-primary': '#F34B4B',
+			},
 		},
 	},
 	plugins: [],
