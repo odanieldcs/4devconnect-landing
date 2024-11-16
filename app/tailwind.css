@@ -29,6 +29,6 @@ li {
 }
 
 .underlined:hover:after {
-	@apply bg-gray-primary;
+	@apply bg-primary;
 	transform: scaleX(1);
 }

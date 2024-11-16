@@ -27,7 +27,7 @@ function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
 	return (
 		<Link
 			to={to}
-			className="underlined block whitespace-nowrap text-gray-secondary font-semibold hover:text-gray-primary focus:no-underline transition-colors"
+			className="underlined block whitespace-nowrap text-secondary font-semibold hover:text-primary focus:no-underline transition-colors"
 		>
 			{children}
 		</Link>

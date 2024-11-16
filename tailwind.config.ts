@@ -17,11 +17,11 @@ export default {
 				],
 			},
 			colors: {
-				'gray-light': '#F3F3F3',
-				'gray-secondary': '#4F4F54',
-				'gray-primary': '#13141A',
+				light: '#F3F3F3',
+				secondary: '#4F4F54',
+				primary: '#13141A',
 				'orange-pink-light': '#F3EDEB',
-				'orange-pink-primary': '#F34B4B',
+				'orange-pink': '#F34B4B',
 			},
 			maxWidth: {
 				'8xl': '88.25rem',
