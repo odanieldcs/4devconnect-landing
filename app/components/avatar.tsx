@@ -1,22 +1,30 @@
+import { cn } from '~/helpers/misc';
+
 const sizes = {
-	sm: '12',
-	default: '16',
-	lg: '20',
-	xl: '32',
+	sm: 'w-12 h-12',
+	default: 'w-18 h-18',
+	lg: 'w-20 h-20',
+	xl: 'w-32 h-32',
 };
+
 export type AvatarProps = {
 	name: string;
 	imageUri: string;
 	size?: keyof typeof sizes;
+	className?: string;
 };
 
-function Avatar({ name, size = 'default', imageUri }: AvatarProps) {
+function Avatar({ name, size = 'default', imageUri, className }: AvatarProps) {
 	const sizeNumber = sizes[size];
 	return (
 		<img
 			src={imageUri}
 			alt={name}
-			className={`rounded-full max-w-${sizeNumber} max-h-${sizeNumber} border-[3px] border-white`}
+			className={cn(
+				sizeNumber,
+				className,
+				'rounded-full border-[3px] border-white w-'
+			)}
 		/>
 	);
 }

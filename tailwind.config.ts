@@ -26,6 +26,12 @@ export default {
 			maxWidth: {
 				'8xl': '88.25rem',
 			},
+			width: {
+				18: '4.5rem',
+			},
+			height: {
+				18: '4.5rem',
+			},
 		},
 	},
 	plugins: [],
