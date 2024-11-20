@@ -4,6 +4,9 @@ export default {
 	content: ['./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}'],
 	theme: {
 		extend: {
+			backgroundImage: {
+				'hero-banner': "url('/hero-banner.jpg')",
+			},
 			fontFamily: {
 				sans: [
 					'Poppins',
