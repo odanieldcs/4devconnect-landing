@@ -37,7 +37,7 @@ const speakers = [
 
 function About() {
 	return (
-		<div className="flex flex-col w-full space-y-10 md:space-y-20">
+		<section className="flex flex-col w-full space-y-10 md:space-y-20">
 			<Heading
 				level="h2"
 				className="italic font-medium text-left md:text-center"
@@ -80,7 +80,7 @@ function About() {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 

@@ -55,7 +55,7 @@ function SponsorsList({
 
 function Sponsors() {
 	return (
-		<div className="flex flex-col w-full gap-12">
+		<section className="flex flex-col w-full gap-12">
 			<div className="flex flex-col gap-4">
 				<Heading
 					level="h2"
@@ -74,7 +74,7 @@ function Sponsors() {
 				</Heading>
 				<SponsorsList sponsors={sponsors.sponsors} />
 			</div>
-		</div>
+		</section>
 	);
 }
 

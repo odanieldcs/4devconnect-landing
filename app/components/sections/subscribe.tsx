@@ -5,7 +5,7 @@ import { Paragraph } from '../paragraph';
 
 function Subscribe() {
 	return (
-		<div className="flex flex-col gap-7 items-center w-full text-left">
+		<section className="flex flex-col gap-7 items-center w-full text-left">
 			<Heading level="h2">Garanta sua vaga</Heading>
 			<Paragraph className="text-left md:text-center md:text-base">
 				Venha trocar conhecimentos e fazer novas conexões.
@@ -16,7 +16,7 @@ function Subscribe() {
 				startElement={<TagIcon className="border-white" />}
 				href="https://www.sympla.com.br/evento/4dev-connect-rio-grande-do-sul-2024/2704715"
 			/>
-		</div>
+		</section>
 	);
 }
 

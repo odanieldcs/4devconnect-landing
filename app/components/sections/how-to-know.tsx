@@ -3,7 +3,7 @@ import { Paragraph } from '../paragraph';
 
 function HowToKnow() {
 	return (
-		<div className="flex flex-col items-start gap-7 shadow-md w-full rounded-[40px] bg-transparent border border-white p-14">
+		<section className="flex flex-col items-start gap-7 shadow-md w-full rounded-[40px] bg-transparent border border-white p-14">
 			<Heading level="h2">É bom saber...</Heading>
 			<Paragraph>
 				<span className="font-semibold">Alimentação:</span> Joe Hamburgueria,
@@ -16,7 +16,7 @@ function HowToKnow() {
 				público no centro da cidade e paradas de ônibus há 300 metros do
 				auditório.
 			</Paragraph>
-		</div>
+		</section>
 	);
 }
 

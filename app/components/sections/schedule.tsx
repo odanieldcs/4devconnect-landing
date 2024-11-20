@@ -81,7 +81,7 @@ const talks: TalkProps[] = [
 
 function Schedule() {
 	return (
-		<div className="flex flex-col w-full md:flex-row justify-between gap-10">
+		<section className="flex flex-col w-full md:flex-row justify-between gap-10">
 			<div className="flex flex-col max-w-80 gap-6">
 				<Heading level="h1" className="md:text-left">
 					Programação do evento
@@ -111,7 +111,7 @@ function Schedule() {
 					o dia do evento.
 				</p>
 			</div>
-		</div>
+		</section>
 	);
 }
 

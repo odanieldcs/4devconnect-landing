@@ -5,7 +5,7 @@ import { Paragraph } from '../paragraph';
 
 function Location() {
 	return (
-		<div className="flex flex-col items-center md:flex-row gap-16 shadow-md w-full rounded-[40px] bg-gray-50 p-14">
+		<section className="flex flex-col items-center md:flex-row gap-16 shadow-md w-full rounded-[40px] bg-gray-50 p-14">
 			<img
 				src="/acigra-gravatai-rs-brasil.jpg"
 				className="w-full h-auto max-w-[540px] rounded-[40px] -rotate-2"
@@ -26,7 +26,7 @@ function Location() {
 					endElement={<ArrowIcon direction="right" />}
 				/>
 			</div>
-		</div>
+		</section>
 	);
 }
 
