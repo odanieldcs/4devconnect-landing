@@ -38,8 +38,11 @@ const speakers = [
 function About() {
 	return (
 		<div className="flex flex-col w-full space-y-10 md:space-y-20">
-			<Heading level="h2">
-				Talks de <strong className="text-orange-pink">Dev para Devs</strong>
+			<Heading level="h2" className="italic font-medium">
+				talks de{' '}
+				<strong className="text-orange-pink font-extrabold">
+					Dev para Devs
+				</strong>
 			</Heading>
 			<div className="flex flex-col md:flex-row gap-14 items-center">
 				<div className="flex flex-col gap-4 text-primary">
