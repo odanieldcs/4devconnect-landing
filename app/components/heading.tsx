@@ -11,7 +11,7 @@ function Heading({ children, level, className }: HeadingProps) {
 	return (
 		<HeadingTag
 			className={cn(
-				'font-semibold text-primary text-2xl/10 md:text-4xl/9 md:text-center -tracking-wide',
+				'font-semibold text-primary text-2xl/10 md:text-4xl/9 -tracking-wide',
 				className
 			)}
 		>
