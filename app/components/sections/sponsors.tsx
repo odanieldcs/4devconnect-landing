@@ -55,24 +55,26 @@ function SponsorsList({
 
 function Sponsors() {
 	return (
-		<section className="flex flex-col w-full gap-12">
-			<div className="flex flex-col gap-4">
-				<Heading
-					level="h2"
-					className="md:text-xl/8 md:text-center text-primary/45 font-medium"
-				>
-					Patrocínio Master
-				</Heading>
-				<SponsorsList sponsors={sponsors.master} />
-			</div>
-			<div className="flex flex-col gap-4">
-				<Heading
-					level="h2"
-					className="md:text-xl/8 md:text-center text-primary/45 font-medium"
-				>
-					Patrocínio
-				</Heading>
-				<SponsorsList sponsors={sponsors.sponsors} />
+		<section className="flex justify-center px-4 py-11">
+			<div className="flex flex-col w-full max-w-7xl gap-12">
+				<div className="flex flex-col gap-4">
+					<Heading
+						level="h2"
+						className="md:text-xl/8 md:text-center text-primary/45 font-medium"
+					>
+						Patrocínio Master
+					</Heading>
+					<SponsorsList sponsors={sponsors.master} />
+				</div>
+				<div className="flex flex-col gap-4">
+					<Heading
+						level="h2"
+						className="md:text-xl/8 md:text-center text-primary/45 font-medium"
+					>
+						Patrocínio
+					</Heading>
+					<SponsorsList sponsors={sponsors.sponsors} />
+				</div>
 			</div>
 		</section>
 	);
