@@ -6,6 +6,7 @@ export default {
 		extend: {
 			backgroundImage: {
 				'hero-banner': "url('/hero-banner.jpg')",
+				buidling: "url('/building.jpg')",
 			},
 			fontFamily: {
 				sans: [
