@@ -100,10 +100,16 @@ function Schedule() {
 					/>
 				</div>
 			</div>
-			<div className="flex flex-col items-start">
-				{talks.map((talk, index) => (
-					<Talk key={index} {...talk} />
-				))}
+			<div className="flex flex-col gap-8">
+				<div className="flex flex-col items-start">
+					{talks.map((talk, index) => (
+						<Talk key={index} {...talk} />
+					))}
+				</div>
+				<p className="text-primary/50 text-xs/4 w-full max-w-80">
+					* Horários e informações podem sofrer alterações sem aviso prévio até
+					o dia do evento.
+				</p>
 			</div>
 		</div>
 	);
