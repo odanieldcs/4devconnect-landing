@@ -16,7 +16,7 @@ export const talks: TalkProps[] = [
 		title: 'Palestra com Daniel Castro',
 		description: 'A talk about something',
 		speaker: {
-			avatar: 'http://localhost:5173/speaker/speaker-sample-1.jpg',
+			avatar: '/speaker/speaker-sample-1.jpg',
 			company: 'DDEVs',
 			linkedin: 'https://linkedin.com/in/ddevs',
 			name: 'Daniel Castro',
@@ -29,7 +29,7 @@ export const talks: TalkProps[] = [
 		title: 'Palestra com Ana Silva',
 		description: 'A talk about something',
 		speaker: {
-			avatar: 'http://localhost:5173/speaker/speaker-sample-2.jpg',
+			avatar: '/speaker/speaker-sample-2.jpg',
 			company: 'DDEVs',
 			linkedin: 'https://linkedin.com/in/ddevs',
 			name: 'Ana Silva',
@@ -47,7 +47,7 @@ export const talks: TalkProps[] = [
 		title: 'Palestra com João Pereira',
 		description: 'A talk about something',
 		speaker: {
-			avatar: 'http://localhost:5173/speaker/speaker-sample-4.jpg',
+			avatar: '/speaker/speaker-sample-4.jpg',
 			company: 'DDEVs',
 			linkedin: 'https://linkedin.com/in/ddevs',
 			name: 'João Pereira',
@@ -60,7 +60,7 @@ export const talks: TalkProps[] = [
 		title: 'Palestra com Maria Oliveira',
 		description: 'A talk about something',
 		speaker: {
-			avatar: 'http://localhost:5173/speaker/speaker-sample-3.jpg',
+			avatar: '/speaker/speaker-sample-3.jpg',
 			company: 'DDEVs',
 			linkedin: 'https://linkedin.com/in/ddevs',
 			name: 'Maria Oliveira',
