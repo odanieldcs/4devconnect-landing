@@ -11,12 +11,12 @@ export const buttonClassName = tv({
 	variants: {
 		variant: {
 			primary: cn(
-				'bg-orange-pink ring-orange-pink/35 text-white',
+				'bg-orange-pink ring-orange-pink/35 text-white ring-offset-orange-pink/10',
 				'focus:ring-orange-pink/35'
 			),
 			secondary: cn(
-				'bg-white border border-gray-300 ring-primary/15 text-primary',
-				'focus:ring-primary/15 hover:border-orange-pink-light'
+				'bg-white border border-gray-300 ring-primary/15 text-primary ring-offset-primary/5',
+				'focus:ring-primary/15'
 			),
 		},
 	},
