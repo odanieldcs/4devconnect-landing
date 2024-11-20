@@ -12,6 +12,14 @@ const meta: Meta<typeof Talk> = {
 			</div>
 		),
 	],
+	argTypes: {
+		position: {
+			control: {
+				type: 'select',
+				options: ['start', 'middle', 'end', 'none'],
+			},
+		},
+	},
 };
 
 export default meta;
@@ -21,6 +29,7 @@ export const Default: Story = {
 	args: {
 		description: 'A talk about something',
 		title: 'Talk Title',
+		time: '10:00',
 		speaker: {
 			avatar: 'http://localhost:6006/speaker/speaker-sample-1.jpg',
 			company: 'DDEVs',
