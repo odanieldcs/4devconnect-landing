@@ -37,47 +37,49 @@ const speakers = [
 
 function About() {
 	return (
-		<section className="flex flex-col w-full space-y-10 md:space-y-20">
-			<Heading
-				level="h2"
-				className="italic font-medium text-left md:text-center"
-			>
-				talks de{' '}
-				<strong className="text-orange-pink font-extrabold">
-					Dev para Devs
-				</strong>
-			</Heading>
-			<div className="flex flex-col md:flex-row gap-14 items-center">
-				<div className="flex flex-col gap-4 text-primary">
-					<Paragraph>
-						O 1º evento da{' '}
-						<strong className="bg-orange-pink/20 px-1 inline-flex">
-							Região Metropolitana
-						</strong>{' '}
-						de Porto Alegre/RS, promovido por profissionais locais para
-						incentivar a troca de conhecimentos e networking entre
-						profissionais, estudantes e pessoas interessadas na área da
-						programação.
-					</Paragraph>
-					<Paragraph>
-						Um evento <strong>totalmente gratuito</strong>, mas com vagas
-						limitadas, garanta a sua!
-					</Paragraph>
-				</div>
-				<div className="flex relative w-full max-w-64 h-18">
-					{speakers.map((speaker, index) => (
-						<div
-							className={`absolute w-18 bg-white overflow-hidden rounded-full ${speaker.classNames}`}
-							key={speaker.name}
-						>
-							<Avatar
-								imageUri={speaker.imageUri}
-								name={speaker.name}
-								size="default"
-								className={index > 0 ? 'opacity-50' : ''}
-							/>
-						</div>
-					))}
+		<section className="flex justify-center bg-white py-11">
+			<div className="flex flex-col w-full max-w-6xl space-y-10 md:space-y-20">
+				<Heading
+					level="h2"
+					className="italic font-medium text-left md:text-center"
+				>
+					talks de{' '}
+					<strong className="text-orange-pink font-extrabold">
+						Dev para Devs
+					</strong>
+				</Heading>
+				<div className="flex flex-col md:flex-row gap-14 items-center">
+					<div className="flex flex-col gap-4 text-primary">
+						<Paragraph>
+							O 1º evento da{' '}
+							<strong className="bg-orange-pink/20 px-1 inline-flex">
+								Região Metropolitana
+							</strong>{' '}
+							de Porto Alegre/RS, promovido por profissionais locais para
+							incentivar a troca de conhecimentos e networking entre
+							profissionais, estudantes e pessoas interessadas na área da
+							programação.
+						</Paragraph>
+						<Paragraph>
+							Um evento <strong>totalmente gratuito</strong>, mas com vagas
+							limitadas, garanta a sua!
+						</Paragraph>
+					</div>
+					<div className="flex relative w-full max-w-64 h-18">
+						{speakers.map((speaker, index) => (
+							<div
+								className={`absolute w-18 bg-white overflow-hidden rounded-full ${speaker.classNames}`}
+								key={speaker.name}
+							>
+								<Avatar
+									imageUri={speaker.imageUri}
+									name={speaker.name}
+									size="default"
+									className={index > 0 ? 'opacity-50' : ''}
+								/>
+							</div>
+						))}
+					</div>
 				</div>
 			</div>
 		</section>
