@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { createRemixStub } from '@remix-run/testing';
 import { Button } from './button';
 import { ArrowIcon, TagIcon } from './icon';
 
@@ -8,20 +7,11 @@ const meta: Meta<typeof Button> = {
 	component: Button,
 	render: (args) => <Button {...args} />,
 	decorators: [
-		(Story) => {
-			const RemixStub = createRemixStub([
-				{
-					path: '/',
-					Component: Story,
-				},
-			]);
-
-			return (
-				<div className="max-w-xl mx-auto flex items-center justify-center">
-					<RemixStub />
-				</div>
-			);
-		},
+		(Story) => (
+			<div className="max-w-6xl mx-auto">
+				<Story />
+			</div>
+		),
 	],
 };
 

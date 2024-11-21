@@ -1,4 +1,4 @@
-import { cn } from '~/helpers/misc';
+import { cn } from '@/helpers/misc';
 
 export type IconProps = {
 	className?: string;

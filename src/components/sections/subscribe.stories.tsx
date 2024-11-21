@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { createRemixStub } from '@remix-run/testing';
 import { Subscribe } from './subscribe';
 
 const meta: Meta<typeof Subscribe> = {
@@ -7,20 +6,11 @@ const meta: Meta<typeof Subscribe> = {
 	component: Subscribe,
 	render: () => <Subscribe />,
 	decorators: [
-		(Story) => {
-			const RemixStub = createRemixStub([
-				{
-					path: '/',
-					Component: Story,
-				},
-			]);
-
-			return (
-				<div className="max-w-6xl mx-auto">
-					<RemixStub />
-				</div>
-			);
-		},
+		(Story) => (
+			<div className="max-w-6xl mx-auto">
+				<Story />
+			</div>
+		),
 	],
 };
 

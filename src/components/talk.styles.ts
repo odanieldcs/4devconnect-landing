@@ -1,5 +1,5 @@
 import { tv } from 'tailwind-variants';
-import { cn } from '~/helpers/misc';
+import { cn } from '@/helpers/misc';
 
 export const timelineClassName = tv({
 	base: cn('w-[3px] bg-orange-pink h-14 absolute z-10'),

@@ -1,5 +1,5 @@
-import { Link } from '@remix-run/react';
-import { cn } from '~/helpers/misc';
+import Link from 'next/link';
+import { cn } from '@/helpers/misc';
 import { buttonClassName } from './button.styles';
 
 export type AnchorButtonProps = {
@@ -23,7 +23,7 @@ function AnchorButton({
 }: AnchorButtonProps & React.ComponentProps<'a'>) {
 	const classNameBase = buttonClassName({ variant });
 	return (
-		<Link to={href} className={cn(classNameBase, className)} {...props}>
+		<Link href={href} className={cn(classNameBase, className)} {...props}>
 			{startElement && <span className="mr-2">{startElement}</span>}
 			{name || children}
 			{endElement && <span className="ml-2">{endElement}</span>}

@@ -1,4 +1,4 @@
-import { Link } from '@remix-run/react';
+import Link from 'next/link';
 
 const LINKS = [
 	{
@@ -26,7 +26,7 @@ const LINKS = [
 function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
 	return (
 		<Link
-			to={to}
+			href={to}
 			className="underlined block whitespace-nowrap text-secondary font-semibold hover:text-primary focus:no-underline transition-colors"
 		>
 			{children}
@@ -39,7 +39,7 @@ function Navbar() {
 		<section className="flex px-4 py-14">
 			<nav className="flex w-full max-w-8xl mx-auto items-center justify-between">
 				<div className="flex">
-					<Link to={'/'} title="4Dev Connect">
+					<Link href={'/'} title="4Dev Connect">
 						<img src="/logo.svg" alt="4Dev Connect" width={280} height={36} />
 					</Link>
 				</div>

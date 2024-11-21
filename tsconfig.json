@@ -1,40 +1,40 @@
 {
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/.server/**/*.ts",
-    "**/.server/**/*.tsx",
-    "**/.client/**/*.ts",
-    "**/.client/**/*.tsx"
-  ],
   "compilerOptions": {
     "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ES2022"
+      "dom",
+      "dom.iterable",
+      "esnext"
     ],
-    "types": [
-      "@remix-run/node",
-      "vite/client"
-    ],
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "jsx": "react-jsx",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "resolveJsonModule": true,
-    "target": "ES2022",
-    "strict": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      "~/*": [
-        "./app/*"
+      "@/*": [
+        "./src/*"
       ]
-    },
-    // Vite takes care of building everything, not tsc.
-    "noEmit": true
-  }
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "other/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

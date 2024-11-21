@@ -1,4 +1,4 @@
-import { cn } from '~/helpers/misc';
+import { cn } from '@/helpers/misc';
 
 const sizes = {
 	sm: 'w-12 h-12',

@@ -1,4 +1,4 @@
-import { cn } from '~/helpers/misc';
+import { cn } from '@/helpers/misc';
 
 type HeadingProps = {
 	children: React.ReactNode;

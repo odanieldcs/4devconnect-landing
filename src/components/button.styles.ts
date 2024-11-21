@@ -1,5 +1,5 @@
 import { tv } from 'tailwind-variants';
-import { cn } from '~/helpers/misc';
+import { cn } from '@/helpers/misc';
 
 export const buttonClassName = tv({
 	base: cn(

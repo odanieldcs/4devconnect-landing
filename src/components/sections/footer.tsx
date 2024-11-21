@@ -1,4 +1,4 @@
-import { Link } from '@remix-run/react';
+import Link from 'next/link';
 import { Heading } from '../heading';
 
 function Footer() {
@@ -37,14 +37,14 @@ function Footer() {
 				<nav className="flex md:flex-row gap-8">
 					<span>Um evento realizado por DDEVs - 2024</span>
 					<Link
-						to="/#"
+						href="/#"
 						title="Confira o código de conduta"
 						className="font-medium"
 					>
 						Código de conduta
 					</Link>
 					<Link
-						to="mailto:contato@4devconnect.com"
+						href="mailto:contato@4devconnect.com"
 						title="Envie um e-mail para"
 						className="font-medium"
 					>
@@ -53,12 +53,12 @@ function Footer() {
 				</nav>
 				<p className="text-center">
 					Built with{' '}
-					<Link to="https://remix.run/" title="Remix" className="font-medium">
-						Remix
+					<Link href="https://remix.run/" title="Remix" className="font-medium">
+						NEXT.js
 					</Link>
 					, and hosted on{' '}
 					<Link
-						to="https://www.azion.com/pt-br/"
+						href="https://www.azion.com/pt-br/"
 						title="Azion"
 						className="font-medium"
 					>

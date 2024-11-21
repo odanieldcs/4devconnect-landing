@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { createRemixStub } from '@remix-run/testing';
 import { Navbar } from './navbar';
 
 const meta: Meta<typeof Navbar> = {
@@ -7,16 +6,11 @@ const meta: Meta<typeof Navbar> = {
 	component: Navbar,
 	render: () => <Navbar />,
 	decorators: [
-		(Story) => {
-			const RemixStub = createRemixStub([
-				{
-					path: '/',
-					Component: Story,
-				},
-			]);
-
-			return <RemixStub />;
-		},
+		(Story) => (
+			<div className="max-w-6xl mx-auto">
+				<Story />
+			</div>
+		),
 	],
 };
 
