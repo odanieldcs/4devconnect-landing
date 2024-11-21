@@ -12,11 +12,16 @@ function Footer() {
 					>
 						Realização
 					</Heading>
-					<img
-						src="/sponsors/ddevs.png"
-						alt="DDEVs - "
-						className="overflow-hidden rounded-3xl h-[100px] w-[200px]"
-					/>
+					<Link
+						href="https://www.linkedin.com/company/oddevs/"
+						title="DDEV's by Daniel Castro"
+					>
+						<img
+							src="/sponsors/ddevs.png"
+							alt="DDEVs, by Daniel Castro"
+							className="overflow-hidden rounded-3xl h-[100px] w-[200px]"
+						/>
+					</Link>
 				</div>
 				<div className="flex flex-col gap-4 w-full items-center justify-center">
 					<Heading
@@ -25,11 +30,16 @@ function Footer() {
 					>
 						Apoio
 					</Heading>
-					<img
-						src="/sponsors/gdg-porto-alegre.png"
-						alt="Google Developers Group Porto Alegre"
-						className="overflow-hidden rounded-3xl h-[100px] w-[200px]"
-					/>
+					<Link
+						href="https://www.linkedin.com/company/gdg-porto-alegre/"
+						title="GDG Porto Alegre - RS"
+					>
+						<img
+							src="/sponsors/gdg-porto-alegre.png"
+							alt="GDG Porto Alegre - RS"
+							className="overflow-hidden rounded-3xl h-[100px] w-[200px]"
+						/>
+					</Link>
 				</div>
 			</div>
 			<div className="flex w-full bottom-0 h-18 bg-buidling bg-white bg-repeat-x z-10"></div>

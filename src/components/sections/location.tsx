@@ -7,7 +7,10 @@ import { metadata } from '@/config';
 
 function Location() {
 	return (
-		<section className="flex justify-center relative px-4 py-11 h-[520px] bg-white">
+		<section
+			className="flex justify-center relative px-4 py-11 h-[520px] bg-white"
+			id="local"
+		>
 			<div className="flex flex-col absolute z-20 w-full max-w-7xl items-center md:flex-row gap-16 shadow-md rounded-[40px] bg-gray-50 p-14">
 				<img
 					src="/acigra-gravatai-rs-brasil.jpg"

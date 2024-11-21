@@ -12,7 +12,7 @@ import { talks } from '@/config';
 
 export default function Home() {
 	return (
-		<div className="flex flex-col w-full justify-center">
+		<div className="flex flex-col w-full justify-center" id="main">
 			<Navbar />
 			<Hero />
 			<About />
