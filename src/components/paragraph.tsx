@@ -7,7 +7,7 @@ type ParagraphProps = {
 
 function Paragraph({ children, className }: ParagraphProps) {
 	return (
-		<p className={cn('text-base/7 md:text-md/8', className)}>{children}</p>
+		<p className={cn('text-sm/7 md:text-base/8', className)}>{children}</p>
 	);
 }
 

@@ -67,7 +67,7 @@ function Sponsors() {
 	return (
 		<section className="flex justify-center px-4 py-11" id="realizacao">
 			<div className="flex flex-col w-full max-w-7xl gap-12">
-				<div className="flex flex-col gap-4 hidden">
+				<div className="hidden md:flex flex-col gap-4">
 					<Heading
 						level="h2"
 						className="md:text-xl/8 md:text-center text-primary/45 font-medium"
@@ -79,15 +79,15 @@ function Sponsors() {
 				<div className="flex flex-col gap-4">
 					<Heading
 						level="h2"
-						className="md:text-xl/8 md:text-center text-primary/45 font-medium"
+						className="text-lg/6 md:text-xl/8 text-center text-primary/45 font-medium"
 					>
 						Patrocínio
 					</Heading>
-					<div className="flex flex-col gap-0">
-						<Paragraph className="text-center text-secondary/75">
+					<div className="flex flex-col gap-4">
+						<Paragraph className="text-center text-sm md:text-base text-secondary/75">
 							Quer apoiar o evento e ter sua empresa aqui?
 						</Paragraph>
-						<Paragraph className="text-center text-secondary/75">
+						<Paragraph className="text-center text-sm md:text-base text-secondary/75">
 							Entre em contato conosco no e-mail contato@4devconnect.com e
 							confira as opções.
 						</Paragraph>

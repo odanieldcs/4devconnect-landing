@@ -4,11 +4,11 @@ import { Heading } from '../heading';
 function Footer() {
 	return (
 		<footer className="flex flex-col w-full justify-center items-center">
-			<div className="flex w-full max-w-7xl justify-between py-11">
-				<div className="flex flex-col gap-4 items-center w-full">
+			<div className="flex flex-col md:flex-row w-full max-w-7xl justify-between px-4 md:px-0 md:py-11">
+				<div className="flex flex-col md:gap-4 items-center w-full">
 					<Heading
 						level="h2"
-						className="md:text-xl/8 md:text-center text-primary/45 font-medium"
+						className="text-lg/6 md:text-xl/8 text-center text-primary/45 font-medium"
 					>
 						Realização
 					</Heading>
@@ -23,10 +23,10 @@ function Footer() {
 						/>
 					</Link>
 				</div>
-				<div className="flex flex-col gap-4 w-full items-center justify-center">
+				<div className="flex flex-col md:gap-4 w-full items-center justify-center">
 					<Heading
 						level="h2"
-						className="md:text-xl/8 md:text-center text-primary/45 font-medium"
+						className="text-lg/6 md:text-xl/8 text-center text-primary/45 font-medium"
 					>
 						Apoio
 					</Heading>
@@ -44,7 +44,7 @@ function Footer() {
 			</div>
 			<div className="flex w-full bottom-0 h-18 bg-buidling bg-white bg-repeat-x z-10"></div>
 			<div className="flex flex-col w-full justify-center items-center gap-4 bg-white py-10 text-primary/40 text-xs/6">
-				<nav className="flex md:flex-row gap-8">
+				<nav className="flex flex-col text-center md:text-left md:flex-row gap-4 md:gap-8">
 					<span>Um evento realizado por DDEVs - 2024</span>
 					<Link
 						href="/#"

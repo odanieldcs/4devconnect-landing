@@ -21,7 +21,10 @@ function Speaker({ name, company, role, linkedin, avatar }: SpeakerProps) {
 					{name}
 				</h3>
 				<SpeakerTitle role={role} company={company} />
-				<a href={linkedin} className="text-sm/4">
+				<a
+					href={linkedin}
+					className="w-6 h-6 text-xs/4 border border-primary/50 rounded-lg py-1 px-1 text-secondary hover:bg-secondary hover:text-white transition-colors"
+				>
 					in
 				</a>
 			</div>

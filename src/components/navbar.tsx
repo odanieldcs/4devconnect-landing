@@ -50,7 +50,6 @@ function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
 
 function Navbar() {
 	const [isFixed, setIsFixed] = useState(false);
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const { navbar, section, container, logo } = navbarClassName({
 		isFixed,
 	});
@@ -70,7 +69,7 @@ function Navbar() {
 		<section className={section()}>
 			<div className={container()}>
 				<nav className={navbar()}>
-					<div className="flex">
+					<div className="flex mx-auto md:mx-0">
 						<Link
 							href={'/'}
 							title="4Dev Connect"
@@ -79,7 +78,7 @@ function Navbar() {
 							<img src="/logo.svg" alt="4Dev Connect" className={logo()} />
 						</Link>
 					</div>
-					<ul className="flex">
+					<ul className="hidden md:flex">
 						{LINKS.map(({ name, to }) => (
 							<li key={to} className="px-4 py-2">
 								<NavLink to={to}>{name}</NavLink>

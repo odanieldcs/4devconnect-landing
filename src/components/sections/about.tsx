@@ -37,7 +37,10 @@ const speakers = [
 
 function About() {
 	return (
-		<section className="flex justify-center bg-white py-11" id="sobre">
+		<section
+			className="flex justify-center bg-white py-11 px-6 md:px-0"
+			id="sobre"
+		>
 			<div className="flex flex-col w-full max-w-6xl space-y-10 md:space-y-20">
 				<Heading
 					level="h2"
