@@ -1,5 +1,13 @@
 import { TalkProps } from './components/talk';
 
+export const metadata = {
+	subscribeUrl:
+		'https://www.sympla.com.br/evento/4dev-connect-rio-grande-do-sul-2024/2704715',
+	cfpUrl: 'https://forms.gle/K3XN8ay2nE9DB29w9',
+	addressUrl:
+		'https://www.google.com/maps/search/ACIGRA,+Rua+Prefeito+Jos%C3%A9+Linck,+701+Centro,+Gravata%C3%AD,+RS',
+};
+
 export const talks: TalkProps[] = [
 	{
 		position: 'start',

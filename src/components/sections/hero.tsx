@@ -3,6 +3,8 @@ import { Heading } from '../heading';
 import { TagIcon } from '../icon';
 import { Paragraph } from '../paragraph';
 
+import { metadata } from '@/config';
+
 function Hero() {
 	return (
 		<section className="flex justify-center relative w-full h-[548px] bg-orange-pink-light  py-11">
@@ -20,7 +22,7 @@ function Hero() {
 					<Button
 						name="Inscreva-se agora!"
 						variant="primary"
-						href="#"
+						href={metadata.subscribeUrl}
 						startElement={<TagIcon />}
 					/>
 				</div>

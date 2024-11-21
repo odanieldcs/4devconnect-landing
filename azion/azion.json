@@ -1,36 +1,58 @@
 {
   "name": "4devconnect",
-  "bucket": "",
+  "bucket": "4devconnect-20241121002855",
   "preset": "Next",
   "env": "production",
-  "prefix": "",
-  "not-first-run": false,
+  "prefix": "20241121002848",
+  "not-first-run": true,
   "function": {
-    "id": 0,
+    "id": 32587,
     "name": "__DEFAULT__",
-    "file": "./out/worker.js",
+    "file": ".edge/worker.js",
     "args": "azion/args.json",
-    "instance-id": 0,
+    "instance-id": 31291,
     "instance-name": "__DEFAULT__",
-    "cache-id": 0
+    "cache-id": 188170
   },
   "application": {
-    "id": 0,
+    "id": 1732146833,
     "name": "__DEFAULT__"
   },
   "domain": {
-    "id": 0,
-    "name": "__DEFAULT__",
-    "domain_name": "",
-    "url": ""
+    "id": 1732145030,
+    "name": "4devconnect",
+    "domain_name": "m12r4utjsg.map.azionedge.net",
+    "url": "https://m12r4utjsg.map.azionedge.net"
   },
   "rt-purge": {
     "purge_on_publish": true
   },
-  "origin": null,
+  "origin": [
+    {
+      "origin-id": 166440,
+      "origin-key": "39e18392-a458-4783-8df9-5212fb47b671",
+      "name": "origin-storage-default"
+    }
+  ],
   "rules-engine": {
     "created": false,
-    "rules": null
+    "rules": [
+      {
+        "id": 322536,
+        "name": "Set Storage Origin for All Requests",
+        "phase": "request"
+      },
+      {
+        "id": 322537,
+        "name": "Deliver Static Assets",
+        "phase": "request"
+      },
+      {
+        "id": 322538,
+        "name": "Execute Edge Function",
+        "phase": "request"
+      }
+    ]
   },
-  "cache-settings": null
+  "cache-settings": []
 }

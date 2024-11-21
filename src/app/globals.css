@@ -4,7 +4,7 @@
 
 html,
 body {
-	@apply bg-[#F3EDEB];
+	@apply bg-[#F3EDEB] font-sans text-primary;
 }
 
 ul,

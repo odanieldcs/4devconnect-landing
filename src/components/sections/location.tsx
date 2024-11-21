@@ -3,6 +3,8 @@ import { Heading } from '../heading';
 import { ArrowIcon } from '../icon';
 import { Paragraph } from '../paragraph';
 
+import { metadata } from '@/config';
+
 function Location() {
 	return (
 		<section className="flex justify-center relative px-4 py-11 h-[520px] bg-white">
@@ -21,7 +23,7 @@ function Location() {
 					</address>
 					<Button
 						name="Confira como chegar"
-						href=""
+						href={metadata.addressUrl}
 						variant="secondary"
 						className="text-secondary"
 						endElement={<ArrowIcon direction="right" />}
