@@ -50,7 +50,7 @@ function SponsorsList({
 	return (
 		<div className="w-full grid grid-cols-2 md:flex md:justify-center">
 			{sponsors.map((sponsor) => (
-				<Link href={sponsor.url} key={sponsor.name}>
+				<Link href={sponsor.url} key={sponsor.name} target='_blank' rel="noopener noreferrer">
 					<img
 						key={sponsor.name}
 						src={sponsor.image}
@@ -67,10 +67,10 @@ function Sponsors() {
 	return (
 		<section className="flex justify-center px-4 py-11" id="realizacao">
 			<div className="flex flex-col w-full max-w-7xl gap-12">
-				<div className="hidden md:flex flex-col gap-4">
+				<div className="md:flex flex-col gap-4">
 					<Heading
 						level="h2"
-						className="md:text-xl/8 md:text-center text-primary/45 font-medium"
+						className="md:text-xl/8 text-center text-primary/45 font-medium"
 					>
 						Patrocínio Master
 					</Heading>
