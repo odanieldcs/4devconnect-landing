@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { navbarClassName } from './navbar.styles';
+import { cn } from '@/helpers/misc';
 
 const LINKS = [
 	{
@@ -16,6 +17,7 @@ const LINKS = [
 	{
 		name: 'CFP',
 		to: 'cfp',
+		disabled: true
 	},
 	{
 		name: 'Sobre',
@@ -36,12 +38,12 @@ function scrollToSection(
 	element?.scrollIntoView({ behavior: 'smooth' });
 }
 
-function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
+function NavLink({ to, children, disabled }: { to: string; children: React.ReactNode, disabled?: boolean }) {
 	return (
 		<Link
 			href={`#${to}`}
 			onClick={(event) => scrollToSection(event, to)}
-			className="underlined block whitespace-nowrap text-secondary font-semibold hover:text-primary focus:no-underline transition-colors"
+			className={cn('underlined block whitespace-nowrap text-secondary font-semibold hover:text-primary focus:no-underline transition-colors', disabled && 'disabled')}
 		>
 			{children}
 		</Link>
@@ -79,9 +81,9 @@ function Navbar() {
 						</Link>
 					</div>
 					<ul className="hidden md:flex">
-						{LINKS.map(({ name, to }) => (
+						{LINKS.map(({ name, to, disabled }) => (
 							<li key={to} className="px-4 py-2">
-								<NavLink to={to}>{name}</NavLink>
+								<NavLink to={to} disabled={disabled}>{name}</NavLink>
 							</li>
 						))}
 					</ul>

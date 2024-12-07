@@ -1,10 +1,7 @@
 import { Button } from '../button';
 import { Heading } from '../heading';
-import { ArrowIcon } from '../icon';
 import { Paragraph } from '../paragraph';
 import { Talk, type TalkProps } from '../talk';
-
-import { metadata } from '@/config';
 
 export type ScheduleProps = {
   talks: TalkProps[];
@@ -28,13 +25,10 @@ function Schedule({ talks }: ScheduleProps) {
           <div className="flex flex-col items-start gap-4">
             <Paragraph>Quer palestrar no evento?</Paragraph>
             <Button
-              href={metadata.cfpUrl}
+              disabled
+              href="/"
               variant="secondary"
-              name="Envie sua palestra até 30/nov."
-              className="text-secondary bg-transparent"
-              target="_blank"
-              rel="noopener noreferrer"
-              endElement={<ArrowIcon direction="right" />}
+              name="Inscrições encerradas"
             />
           </div>
         </div>

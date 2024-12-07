@@ -1,37 +1,38 @@
+import { avatars } from '@/config';
 import { Avatar } from '../avatar';
 import { Heading } from '../heading';
 import { Paragraph } from '../paragraph';
 
 const speakers = [
   {
-    name: 'Speaker 1',
-    imageUri: '/speaker/speaker-sample-1.jpg',
+    name: 'Andressa',
+    imageUri: avatars.andressa,
     classNames: 'left-0 z-[60]',
   },
   {
-    name: 'Speaker 2',
-    imageUri: '/speaker/speaker-sample-2.jpg',
-    classNames: 'left-[2.125rem] z-[50]',
+    name: 'Robson Júnior',
+    imageUri: avatars.robson,
+    classNames: 'left-[3.2rem] md:left-[3rem] z-[50]',
   },
   {
-    name: 'Speaker 3',
-    imageUri: '/speaker/speaker-sample-3.jpg',
-    classNames: 'left-[4.25rem] z-[40]',
+    name: 'Luiz Duarte',
+    imageUri: avatars.luiz,
+    classNames: 'left-[6.2rem] md:left-[6rem] z-[40]',
   },
   {
-    name: 'Speaker 4',
-    imageUri: '/speaker/speaker-sample-4.jpg',
-    classNames: 'left-[6.375rem] z-[30]',
+    name: 'Rayana',
+    imageUri: avatars.rayana,
+    classNames: 'left-[9.2rem] md:left-[9rem] z-[30]',
   },
   {
-    name: 'Speaker 5',
-    imageUri: '/speaker/speaker-sample-5.jpg',
-    classNames: 'left-[8.5rem] z-[20]',
+    name: 'Eduardo Garcia',
+    imageUri: avatars.eduardo,
+    classNames: 'left-[12.2rem] md:left-[12rem] z-[20]',
   },
   {
-    name: 'Speaker 6',
-    imageUri: '/speaker/speaker-sample-6.jpg',
-    classNames: 'left-[10.625rem] z-[10]',
+    name: 'Felipe Bastos',
+    imageUri: avatars.felipe,
+    classNames: 'left-[15.2rem] md:left-[15rem] z-[10]',
   },
 ];
 
@@ -68,7 +69,7 @@ function About() {
               limitadas. Garanta já a sua!
             </Paragraph>
           </div>
-          <div className="flex relative w-full max-w-64 h-18">
+          <div className="flex relative w-full md:max-w-64 max-w-full h-18">
             {speakers.map((speaker, index) => (
               <div
                 className={`absolute w-18 bg-white overflow-hidden rounded-full ${speaker.classNames}`}
