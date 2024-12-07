@@ -7,7 +7,7 @@ export const timelineClassName = tv({
 		position: {
 			none: 'h-0',
 			start: cn('left-9 top-6'),
-			middle: cn('left-9 -top-8 h-[112px]'),
+			middle: cn('left-9 -top-6 h-[148px] md:h-[112px]'),
 			end: cn('left-9 -top-8 bottom-0'),
 		},
 	},

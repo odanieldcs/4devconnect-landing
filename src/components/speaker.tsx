@@ -5,30 +5,84 @@ export type SpeakerProps = {
 	role: string;
 	linkedin: string;
 	avatar: string;
+	collaborator?: {
+		name: string;
+		avatar: string;
+		linkedin: string;
+	};
 };
 
 function SpeakerTitle({ role, company }: { role: string; company: string }) {
-	const companyName = company && ` @${company}`;
-	return <p className="text-xs/5 text-secondary">{`${role} ${companyName}`}</p>;
+	return (
+		<div className="flex flex-col w-full">
+			<p className="text-sm/4 text-secondary">{role}</p>
+			<p className="text-sm/4 text-secondary">{company}</p>
+		</div>
+	);
 }
 
-function Speaker({ name, company, role, linkedin, avatar }: SpeakerProps) {
+function MultipleSpeakers({ speakers }: { speakers: SpeakerProps[] }) {}
+
+function Speaker({
+	name,
+	company,
+	role,
+	linkedin,
+	avatar,
+	collaborator,
+}: SpeakerProps) {
+	const classNameAvatarWidth = collaborator ? 'w-32' : 'w-18';
 	return (
 		<div className="flex space-x-2 items-center">
-			<Avatar name={name} imageUri={avatar} />
-			<div className="flex flex-col">
-				<h3 className="font-medium leading-5 -tracking-wide text-primary">
-					{name}
-				</h3>
+			<div className={`flex h-18 ${classNameAvatarWidth}`}>
+				<Avatar name={name} imageUri={avatar} />
+				{collaborator && (
+					<Avatar
+						name={collaborator.name}
+						imageUri={collaborator.avatar}
+						className="absolute left-[3rem]"
+					/>
+				)}
+			</div>
+			<div className="flex flex-col space-x-0">
+				<div className="flex gap-2 font-semibold leading-5 -tracking-wide text-primary">
+					<a
+						href={linkedin}
+						target="_blank"
+						title={`Acesse o LinkedIn de ${name}`}
+						className="inline-flex"
+					>
+						<h3 className="font-semibold leading-5 -tracking-wide text-primary hover:text-orange-pink transition-colors duration-500 flex gap-2 items-center">
+							{name}
+							<img
+								src="/linkedin.png"
+								alt="LinkedIn"
+								className="w-3 h-3 opacity-40"
+							/>
+						</h3>
+					</a>
+					{collaborator && (
+						<>
+							e
+							<a
+								href={collaborator.linkedin}
+								target="_blank"
+								title={`Acesse o LinkedIn de ${collaborator.name}`}
+								className="inline-flex"
+							>
+								<h3 className="hover:text-orange-pink transition-colors duration-500 flex gap-1 items-center">
+									{collaborator.name}
+									<img
+										src="/linkedin.png"
+										alt="LinkedIn"
+										className="w-3 h-3 opacity-40"
+									/>
+								</h3>
+							</a>
+						</>
+					)}
+				</div>
 				<SpeakerTitle role={role} company={company} />
-				<a
-					href={linkedin}
-					target='_blank'
-					rel="noopener noreferrer"
-					className="w-6 h-6 text-xs/4 border border-primary/50 rounded-lg py-1 px-1 text-secondary hover:bg-secondary hover:text-white transition-colors"
-				>
-					in
-				</a>
 			</div>
 		</div>
 	);

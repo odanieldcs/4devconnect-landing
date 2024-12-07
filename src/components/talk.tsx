@@ -25,13 +25,13 @@ function Talk({
 				</div>
 				<span className={timelineCss}></span>
 			</div>
-			<div className="flex space-x-2 items-center bg-light py-3 px-4 cursor-default rounded-xl transition duration-150 ring-offset-2 hover:ring-[3px] hover:ring-orange-pink/25">
-				<div className="flex flex-col text-right">
-					<h2 className="text-base/6 font-medium text-primary -tracking-wide">
+			<div className="flex flex-col md:flex-row gap-2 md:items-center bg-light py-4 px-5 cursor-default rounded-xl transition duration-150 ring-offset-2 hover:ring-[3px] hover:ring-orange-pink/25">
+				<div className="flex flex-col text-left md:text-right justify-center">
+					<h2 className="text-base/5 font-semibold text-primary -tracking-wide">
 						{title}
 					</h2>
 					{description && (
-						<p className="text-xs/6 text-primary">{description}</p>
+						<p className="text-sm/4 text-primary">{description}</p>
 					)}
 				</div>
 				{speaker && <Speaker {...speaker} />}
