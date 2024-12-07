@@ -61,7 +61,7 @@ export const talks: TalkProps[] = [
 	{
 		position: 'middle',
 		title: 'Jornada na Programação',
-		description: 'Desafios e crescimento...',
+		description: 'Desafios e Crescimento',
 		time: '11:30',
 		speaker: {
 			avatar: avatars.andressa,

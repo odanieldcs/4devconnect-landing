@@ -15,13 +15,11 @@ export type SpeakerProps = {
 function SpeakerTitle({ role, company }: { role: string; company: string }) {
 	return (
 		<div className="flex flex-col w-full">
-			<p className="text-sm/4 text-secondary">{role}</p>
-			<p className="text-sm/4 text-secondary">{company}</p>
+			<p className="text-xs/4 md:text-sm/4 text-secondary">{role}</p>
+			<p className="text-xs/4 md:text-sm/4 text-secondary">{company}</p>
 		</div>
 	);
 }
-
-function MultipleSpeakers({ speakers }: { speakers: SpeakerProps[] }) {}
 
 function Speaker({
 	name,
@@ -34,7 +32,7 @@ function Speaker({
 	const classNameAvatarWidth = collaborator ? 'w-32' : 'w-18';
 	return (
 		<div className="flex space-x-2 items-center">
-			<div className={`flex h-18 ${classNameAvatarWidth}`}>
+			<div className={`inline-flex h-18 ${classNameAvatarWidth}`}>
 				<Avatar name={name} imageUri={avatar} />
 				{collaborator && (
 					<Avatar
@@ -52,7 +50,7 @@ function Speaker({
 						title={`Acesse o LinkedIn de ${name}`}
 						className="inline-flex"
 					>
-						<h3 className="font-semibold leading-5 -tracking-wide text-primary hover:text-orange-pink transition-colors duration-500 flex gap-2 items-center">
+						<h3 className="font-semibold text-sm/4 md:text-base/6 leading-5 -tracking-wide text-primary hover:text-orange-pink transition-colors duration-500 flex gap-2 items-center">
 							{name}
 							<img
 								src="/linkedin.png"

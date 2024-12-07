@@ -17,15 +17,17 @@ export type AvatarProps = {
 function Avatar({ name, size = 'default', imageUri, className }: AvatarProps) {
 	const sizeNumber = sizes[size];
 	return (
-		<img
-			src={imageUri}
-			alt={name}
-			className={cn(
-				sizeNumber,
-				className,
-				'rounded-full border-[3px] border-white w-'
-			)}
-		/>
+		<div className="w-18 h-auto">
+			<img
+				src={imageUri}
+				alt={name}
+				className={cn(
+					sizeNumber,
+					className,
+					'rounded-full border-[3px] border-white'
+				)}
+			/>
+		</div>
 	);
 }
 
