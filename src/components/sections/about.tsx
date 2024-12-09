@@ -7,32 +7,47 @@ const speakers = [
 	{
 		name: 'Andressa',
 		imageUri: avatars.andressa,
-		classNames: 'left-0 z-[60]',
+		classNames: 'left-[-1rem] md:left-0 z-[60]',
 	},
 	{
 		name: 'Robson Júnior',
 		imageUri: avatars.robson,
-		classNames: 'left-[3.2rem] md:left-[3rem] z-[50]',
+		classNames: 'left-[2rem] md:left-[3rem] z-[59]',
 	},
 	{
 		name: 'Luiz Duarte',
 		imageUri: avatars.luiz,
-		classNames: 'left-[6.2rem] md:left-[6rem] z-[40]',
+		classNames: 'left-[4.4rem] md:left-[6rem] z-[58]',
 	},
 	{
 		name: 'Ed Pereira',
 		imageUri: avatars.ed,
-		classNames: 'left-[9.2rem] md:left-[9rem] z-[30]',
+		classNames: 'left-[7rem] md:left-[9rem] z-[57]',
 	},
 	{
 		name: 'Eduardo Garcia',
 		imageUri: avatars.eduardo,
-		classNames: 'left-[12.2rem] md:left-[12rem] z-[20]',
+		classNames: 'left-[9.3rem] md:left-[12rem] z-[56]',
 	},
 	{
 		name: 'Felipe Bastos',
 		imageUri: avatars.felipe,
-		classNames: 'left-[15.2rem] md:left-[15rem] z-[10]',
+		classNames: 'left-[12rem] md:left-[15rem] z-[55]',
+	},
+	{
+		name: 'Raryson Pereira',
+		imageUri: avatars.raryson,
+		classNames: 'left-[14.5rem] md:left-[18rem] z-[54]',
+	},
+	{
+		name: 'Alessandro Cauduro',
+		imageUri: avatars.alessandro,
+		classNames: 'left-[17rem] md:left-[21rem] z-[53]',
+	},
+	{
+		name: 'Rayana Garay',
+		imageUri: avatars.rayana,
+		classNames: 'left-[19rem] md:left-[24rem] z-[52]',
 	},
 ];
 

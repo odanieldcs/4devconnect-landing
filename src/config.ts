@@ -45,8 +45,8 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Porque Acessibilidade',
-		description: 'na Web Pode Ser Difícil',
+		title: 'Por que acessibilidade',
+		description: 'na web pode ser difícil',
 		time: '09:55',
 		speaker: {
 			avatar: avatars.ed,
@@ -58,13 +58,13 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Coffee Break',
+		title: 'Coffee break',
 		time: '10:25',
 	},
 	{
 		position: 'middle',
-		title: 'Deploying AI Agents on the Edge',
-		description: 'Real-World Applications',
+		title: 'Deploying AI Agents on the edge',
+		description: 'real-world applications',
 		speaker: {
 			avatar: avatars.alessandro,
 			name: 'Alessandro Cauduro',
@@ -76,8 +76,8 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Jornada na Programação',
-		description: 'Desafios e Crescimento',
+		title: 'Jornada na programação',
+		description: 'desafios e crescimento',
 		time: '11:30',
 		speaker: {
 			avatar: avatars.andressa,
@@ -107,15 +107,15 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Integrando LLMs e Machine',
-		description: 'em Processos de Dados',
+		title: 'Integrando LLMs e machine learning',
+		description: 'em processos de dados',
 		time: '14:25',
 		speaker: {
 			avatar: avatars.eduardo,
 			name: 'Eduardo Garcia',
 			company: 'na SoftDesign',
 			linkedin: 'https://www.linkedin.com/in/eduardomellogarcia/',
-			role: 'Desenvolvedores Full Stack',
+			role: 'Software Engineers Full Stack',
 			collaborator: {
 				avatar: avatars.felipe,
 				name: 'Felipe Bastos',
@@ -125,13 +125,13 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Coffee Break',
+		title: 'Coffee break',
 		time: '15:00',
 	},
 	{
 		position: 'middle',
-		title: 'Management Application',
-		description: 'com Azion Edge Computing',
+		title: 'Management application',
+		description: 'com Azion edge computing',
 		time: '15:30',
 		speaker: {
 			avatar: avatars.robson,
@@ -143,8 +143,8 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Integrando Devs no Discovery',
-		description: 'Uma Abordagem Colaborativa',
+		title: 'Integrando devs no discovery',
+		description: 'uma abordagem colaborativa',
 		speaker: {
 			avatar: avatars.rayana,
 			name: 'Rayana Garay',
