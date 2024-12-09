@@ -107,8 +107,8 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Integrando LLMs e Machine ',
-		description: 'Processos de Dados: O',
+		title: 'Integrando LLMs e Machine',
+		description: 'em Processos de Dados',
 		time: '14:25',
 		speaker: {
 			avatar: avatars.eduardo,
