@@ -32,18 +32,18 @@ function Speaker({
 	const classNameAvatarWidth = collaborator ? 'w-32' : 'w-18';
 	return (
 		<div className="flex space-x-2 items-center">
-			<div className={`inline-flex h-18 ${classNameAvatarWidth}`}>
-				<Avatar name={name} imageUri={avatar} />
+			<div className={`inline h-18 w-18 relative ${classNameAvatarWidth}`}>
+				<Avatar name={name} imageUri={avatar} className="w-18 h-18" />
 				{collaborator && (
 					<Avatar
 						name={collaborator.name}
 						imageUri={collaborator.avatar}
-						className="absolute left-[3rem]"
+						className="absolute top-0 left-[3rem]"
 					/>
 				)}
 			</div>
 			<div className="flex flex-col space-x-0">
-				<div className="flex gap-2 font-semibold leading-5 -tracking-wide text-primary">
+				<div className="flex flex-col md:flex-row gap-0.5 md:gap-1.5 font-semibold leading-5 -tracking-wide text-primary">
 					<a
 						href={linkedin}
 						target="_blank"
@@ -61,7 +61,7 @@ function Speaker({
 					</a>
 					{collaborator && (
 						<>
-							e
+							<span className="text-base/6 hidden md:visible">e</span>
 							<a
 								href={collaborator.linkedin}
 								target="_blank"

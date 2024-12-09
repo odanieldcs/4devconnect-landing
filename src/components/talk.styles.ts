@@ -6,9 +6,9 @@ export const timelineClassName = tv({
 	variants: {
 		position: {
 			none: 'h-0',
-			start: cn('left-9 top-6'),
-			middle: cn('left-9 -top-6 h-[148px] md:h-[112px]'),
-			end: cn('left-9 -top-8 bottom-0'),
+			start: cn('left-8 md:left-9 top-6'),
+			middle: cn('left-8 md:left-9 -top-6 h-[175px] md:h-[120px]'),
+			end: cn('left-8 md:left-9 -top-8 bottom-0'),
 		},
 	},
 });

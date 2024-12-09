@@ -9,12 +9,14 @@ export const metadata = {
 
 export const avatars = {
 	andressa: '/speaker/andressa-gaspar.jpg',
+	alessandro: '/speaker/alessandro-cauduro.jpg',
 	ed: '/speaker/ed-pereira.jpg',
 	robson: '/speaker/robson-junior.jpg',
 	luiz: '/speaker/luiz-duarte.jpg',
 	rayana: '/speaker/rayana-garay.jpg',
 	eduardo: '/speaker/eduardo-garcia.jpg',
 	felipe: '/speaker/felipe-bastos.jpg',
+	raryson: '/speaker/raryson-pereira.jpg',
 };
 
 export const talks: TalkProps[] = [
@@ -30,8 +32,15 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Palestra à definir',
-		description: 'Em breve mais informações',
+		title: 'Explorando tudo que a última',
+		description: 'versão do Node pode nos dar',
+		speaker: {
+			avatar: avatars.raryson,
+			name: 'Raryson Pereira',
+			company: 'na CloudCosmos',
+			linkedin: 'https://www.linkedin.com/in/egpereira',
+			role: 'Senior Software Engineer',
+		},
 		time: '09:20',
 	},
 	{
@@ -54,8 +63,15 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Palestra à definir',
-		description: 'Em breve mais informações',
+		title: 'Deploying AI Agents on the Edge',
+		description: 'Real-World Applications',
+		speaker: {
+			avatar: avatars.alessandro,
+			name: 'Alessandro Cauduro',
+			company: 'na Azion',
+			linkedin: 'https://www.linkedin.com/in/alessandrocauduro/',
+			role: 'Chief AI Officer',
+		},
 		time: '10:55',
 	},
 	{
@@ -80,7 +96,7 @@ export const talks: TalkProps[] = [
 		position: 'middle',
 		title: 'Web2 para Web3.',
 		description: 'O que muda para o dev?',
-		time: '13:30',
+		time: '13:50',
 		speaker: {
 			avatar: avatars.luiz,
 			name: 'Luiz Duarte',
@@ -91,20 +107,32 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Palestra à definir',
-		description: 'Em breve mais informações',
-		time: '14:05',
+		title: 'Integrando LLMs e Machine ',
+		description: 'Processos de Dados: O',
+		time: '14:25',
+		speaker: {
+			avatar: avatars.eduardo,
+			name: 'Eduardo Garcia',
+			company: 'na SoftDesign',
+			linkedin: 'https://www.linkedin.com/in/luiztools',
+			role: 'Desenvolvedores Full Stack',
+			collaborator: {
+				avatar: avatars.felipe,
+				name: 'Felipe Bastos',
+				linkedin: 'https://www.linkedin.com/in/felipe-bastos-0b1b3b1b/',
+			},
+		},
 	},
 	{
 		position: 'middle',
-		title: 'Intervalo',
-		time: '14:40',
+		title: 'Coffee Break',
+		time: '15:00',
 	},
 	{
 		position: 'middle',
 		title: 'Management Application',
 		description: 'com Azion Edge Computing',
-		time: '15:10',
+		time: '15:30',
 		speaker: {
 			avatar: avatars.robson,
 			name: 'Robson Júnior',
@@ -115,18 +143,25 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Palestra à definir',
-		description: 'Em breve mais informações',
-		time: '15:45',
+		title: 'Integrando Devs no Discovery',
+		description: 'Uma Abordagem Colaborativa',
+		speaker: {
+			avatar: avatars.rayana,
+			name: 'Rayana Garay',
+			company: 'na SoftDesign',
+			linkedin: 'https://www.linkedin.com/in/rayanagaray/',
+			role: 'Software Engineer Front-end',
+		},
+		time: '16:05',
 	},
 	{
 		position: 'end',
 		title: 'Sorteios',
-		time: '16:20',
+		time: '16:40',
 	},
 	{
 		position: 'end',
-		title: 'Encerramento & Happy Hour',
-		time: '17:00',
+		title: 'Encerramento',
+		time: '17:15',
 	},
 ];

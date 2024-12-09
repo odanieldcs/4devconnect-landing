@@ -45,7 +45,7 @@ function Footer() {
 				</Paragraph>
 			</Dialog>
 			<footer className="flex flex-col w-full justify-center items-center">
-				<div className="flex flex-col md:flex-row w-full max-w-7xl justify-between px-4 md:px-0 md:py-11">
+				<div className="flex flex-col-reverse md:flex-row w-full max-w-7xl justify-between px-4 md:px-0 md:py-11">
 					<div className="flex flex-col md:gap-4 items-center w-full">
 						<Heading
 							level="h2"
@@ -73,7 +73,7 @@ function Footer() {
 						>
 							Apoio
 						</Heading>
-						<div className="flex">
+						<div className="grid gap-0 md:flex">
 							<Link
 								href="https://www.linkedin.com/company/gdg-porto-alegre/"
 								title="GDG Porto Alegre - RS"
@@ -91,11 +91,24 @@ function Footer() {
 								title="GUFERS - Grupo de Usuários de Front End"
 								target="_blank"
 								rel="noopener noreferrer"
+								className="md:ml-4 justify-center flex"
 							>
 								<img
 									src="/sponsors/gufers.png"
 									alt="GUFERS - Grupo de Usuários de Front End"
 									className="overflow-hidden rounded-3xl h-[100px] w-[132px]"
+								/>
+							</Link>
+							<Link
+								href="https://www.fiap.com.br/"
+								title="Alura + FIAP"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									src="/sponsors/alura-fiap.png"
+									alt="Alura + FIAP"
+									className="overflow-hidden rounded-3xl h-[100px] w-[200px]"
 								/>
 							</Link>
 						</div>
