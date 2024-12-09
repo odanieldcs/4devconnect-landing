@@ -50,7 +50,12 @@ function SponsorsList({
 	return (
 		<div className="w-full grid grid-cols-2 md:flex md:justify-center">
 			{sponsors.map((sponsor) => (
-				<Link href={sponsor.url} key={sponsor.name} target='_blank' rel="noopener noreferrer">
+				<Link
+					href={sponsor.url}
+					key={sponsor.name}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<img
 						key={sponsor.name}
 						src={sponsor.image}
@@ -66,7 +71,7 @@ function SponsorsList({
 function Sponsors() {
 	return (
 		<section className="flex justify-center px-4 py-11" id="realizacao">
-			<div className="flex flex-col w-full max-w-7xl gap-12">
+			<div className="flex flex-col w-full max-w-7xl">
 				<div className="md:flex flex-col gap-4">
 					<Heading
 						level="h2"
@@ -83,7 +88,7 @@ function Sponsors() {
 					>
 						Patrocínio
 					</Heading>
-					<div className="flex flex-col gap-4">
+					{/* <div className="flex flex-col gap-4">
 						<Paragraph className="text-center text-sm md:text-base text-secondary/75">
 							Quer apoiar o evento e ter sua empresa aqui?
 						</Paragraph>
@@ -98,8 +103,8 @@ function Sponsors() {
 							</Link>{' '}
 							e confira as opções.
 						</Paragraph>
-					</div>
-					<SponsorsList sponsors={[]} />
+					</div> */}
+					{/* <SponsorsList sponsors={[]} /> */}
 				</div>
 			</div>
 		</section>

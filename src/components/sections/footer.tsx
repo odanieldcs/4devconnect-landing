@@ -45,7 +45,7 @@ function Footer() {
 				</Paragraph>
 			</Dialog>
 			<footer className="flex flex-col w-full justify-center items-center">
-				<div className="flex flex-col-reverse md:flex-row w-full max-w-7xl justify-between px-4 md:px-0 md:py-11">
+				<div className="flex flex-col-reverse md:flex-row w-full max-w-7xl justify-between pb-4 md:px-0 md:pb-4">
 					<div className="flex flex-col md:gap-4 items-center w-full">
 						<Heading
 							level="h2"
