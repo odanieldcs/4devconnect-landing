@@ -19,6 +19,12 @@ export const avatars = {
 	raryson: '/speaker/raryson-pereira.jpg',
 };
 
+export type Speaker = {
+  name: string;
+  imageUri: string;
+  classNames?: string;
+};
+
 export const talks: TalkProps[] = [
 	{
 		position: 'start',
@@ -165,3 +171,62 @@ export const talks: TalkProps[] = [
 		time: '17:15',
 	},
 ];
+
+export const speakers: Speaker[] = [
+	{
+		name: 'Andressa',
+		imageUri: avatars.andressa,
+	},
+	{
+		name: 'Robson Júnior',
+		imageUri: avatars.robson,
+	},
+	{
+		name: 'Luiz Duarte',
+		imageUri: avatars.luiz,
+	},
+	{
+		name: 'Ed Pereira',
+		imageUri: avatars.ed,
+	},
+	{
+		name: 'Eduardo Garcia',
+		imageUri: avatars.eduardo,
+	},
+	{
+		name: 'Felipe Bastos',
+		imageUri: avatars.felipe,
+	},
+	{
+		name: 'Raryson Pereira',
+		imageUri: avatars.raryson,
+	},
+	{
+		name: 'Alessandro Cauduro',
+		imageUri: avatars.alessandro,
+	},
+	{
+		name: 'Rayana Garay',
+		imageUri: avatars.rayana,
+	},
+];
+
+export const speakersArray = (array: Speaker[]): Speaker[] => {
+  return [...array].sort(() => Math.random() - 0.5);
+};
+
+export const calculateLeft = (index: number): string => {
+	const leftValues = [
+		'left-[-1rem] md:left-0 z-[60]',
+		'left-[2rem] md:left-[3rem] z-[59]',
+		'left-[4.4rem] md:left-[6rem] z-[58]',
+		'left-[7rem] md:left-[9rem] z-[57]',
+		'left-[9.3rem] md:left-[12rem] z-[56]',
+		'left-[12rem] md:left-[15rem] z-[55]',
+		'left-[14.5rem] md:left-[18rem] z-[54]',
+		'left-[17rem] md:left-[21rem] z-[53]',
+		'left-[19rem] md:left-[24rem] z-[52]',
+	];
+
+	return leftValues[index];
+};

@@ -1,63 +1,20 @@
-import { avatars } from '@/config';
+'use client'
+import { speakersArray, Speaker, speakers, calculateLeft } from '@/config';
+import { useEffect, useState } from 'react';
 import { Avatar } from '../avatar';
 import { Heading } from '../heading';
 import { Paragraph } from '../paragraph';
-
-const speakers = [
-	{
-		name: 'Andressa',
-		imageUri: avatars.andressa,
-		classNames: 'left-[-1rem] md:left-0 z-[60]',
-	},
-	{
-		name: 'Robson Júnior',
-		imageUri: avatars.robson,
-		classNames: 'left-[2rem] md:left-[3rem] z-[59]',
-	},
-	{
-		name: 'Luiz Duarte',
-		imageUri: avatars.luiz,
-		classNames: 'left-[4.4rem] md:left-[6rem] z-[58]',
-	},
-	{
-		name: 'Ed Pereira',
-		imageUri: avatars.ed,
-		classNames: 'left-[7rem] md:left-[9rem] z-[57]',
-	},
-	{
-		name: 'Eduardo Garcia',
-		imageUri: avatars.eduardo,
-		classNames: 'left-[9.3rem] md:left-[12rem] z-[56]',
-	},
-	{
-		name: 'Felipe Bastos',
-		imageUri: avatars.felipe,
-		classNames: 'left-[12rem] md:left-[15rem] z-[55]',
-	},
-	{
-		name: 'Raryson Pereira',
-		imageUri: avatars.raryson,
-		classNames: 'left-[14.5rem] md:left-[18rem] z-[54]',
-	},
-	{
-		name: 'Alessandro Cauduro',
-		imageUri: avatars.alessandro,
-		classNames: 'left-[17rem] md:left-[21rem] z-[53]',
-	},
-	{
-		name: 'Rayana Garay',
-		imageUri: avatars.rayana,
-		classNames: 'left-[19rem] md:left-[24rem] z-[52]',
-	},
-];
+import { cn } from '@/helpers/misc';
 
 function About() {
-	// generate random avatars from the list
+	const [speakersList, setSpeakersList] = useState<Speaker[]>([]);
+
+	useEffect(() => {
+		setSpeakersList(speakersArray(speakers));
+	}, []);
+
 	return (
-		<section
-			className="flex justify-center bg-white py-11 px-6 md:px-0"
-			id="sobre"
-		>
+		<section className="flex justify-center bg-white py-11 px-6 md:px-0" id="sobre">
 			<div className="flex flex-col w-full max-w-6xl space-y-10 md:space-y-20">
 				<Heading
 					level="h2"
@@ -86,19 +43,19 @@ function About() {
 						</Paragraph>
 					</div>
 					<div className="flex relative w-full md:max-w-64 max-w-full h-18">
-						{speakers.map((speaker, index) => (
-							<div
-								className={`absolute w-18 bg-white overflow-hidden rounded-full ${speaker.classNames}`}
-								key={speaker.name}
-							>
-								<Avatar
-									imageUri={speaker.imageUri}
-									name={speaker.name}
-									size="default"
-									className={index > 0 ? 'opacity-50' : ''}
-								/>
-							</div>
-						))}
+						{speakersList.map((speaker, index) => (
+								<div
+									className={cn('absolute w-18 bg-white overflow-hidden rounded-full', calculateLeft(index), speaker.classNames)}
+									key={speaker.name}
+								>
+									<Avatar
+										imageUri={speaker.imageUri}
+										name={speaker.name}
+										size="default"
+										className={index === 0 ? '' : 'opacity-50'}
+									/>
+								</div>
+							))}
 					</div>
 				</div>
 			</div>
