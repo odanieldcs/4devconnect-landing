@@ -52,7 +52,7 @@ function About() {
 										imageUri={speaker.imageUri}
 										name={speaker.name}
 										size="default"
-										className={index === 0 ? 'opacity-50' : ''}
+										className={index === 0 ? '' : 'opacity-50'}
 									/>
 								</div>
 							))}
