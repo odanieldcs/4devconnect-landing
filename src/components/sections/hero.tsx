@@ -17,7 +17,7 @@ function Hero() {
 				</Heading>
 				<div className="flex flex-col gap-4 md:gap-8 text-center">
 					<Paragraph className="text-white md:font-semibold md:text-2xl/7 md:text-right">
-						14 dezembro 2024 <span className="md:block">Gravataí/RS</span>
+						14 Dezembro 2024 <span className="md:block">Gravataí/RS</span>
 					</Paragraph>
 					<Button
 						name="Inscreva-se agora!"

@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { speakersArray, Speaker, speakers, calculateLeft } from '@/config';
 import { useEffect, useState } from 'react';
 import { Avatar } from '../avatar';
@@ -14,7 +14,10 @@ function About() {
 	}, []);
 
 	return (
-		<section className="flex justify-center bg-white py-11 px-6 md:px-0" id="sobre">
+		<section
+			className="flex justify-center bg-white py-11 px-6 md:px-0"
+			id="sobre"
+		>
 			<div className="flex flex-col w-full max-w-6xl space-y-10 md:space-y-20">
 				<Heading
 					level="h2"
@@ -42,20 +45,24 @@ function About() {
 							limitadas. Garanta já a sua!
 						</Paragraph>
 					</div>
-					<div className="flex relative w-full md:max-w-64 max-w-full h-18">
+					<div className="flex relative w-full md:max-w-96 max-w-full h-18">
 						{speakersList.map((speaker, index) => (
-								<div
-									className={cn('absolute w-18 bg-white overflow-hidden rounded-full', calculateLeft(index), speaker.classNames)}
-									key={speaker.name}
-								>
-									<Avatar
-										imageUri={speaker.imageUri}
-										name={speaker.name}
-										size="default"
-										className={index === 0 ? '' : 'opacity-50'}
-									/>
-								</div>
-							))}
+							<div
+								className={cn(
+									'absolute w-18 bg-white overflow-hidden rounded-full',
+									calculateLeft(index),
+									speaker.classNames
+								)}
+								key={speaker.name}
+							>
+								<Avatar
+									imageUri={speaker.imageUri}
+									name={speaker.name}
+									size="default"
+									className={index === 0 ? '' : 'opacity-50'}
+								/>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>

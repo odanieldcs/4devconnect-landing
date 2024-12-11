@@ -20,16 +20,16 @@ export const avatars = {
 };
 
 export type Speaker = {
-  name: string;
-  imageUri: string;
-  classNames?: string;
+	name: string;
+	imageUri: string;
+	classNames?: string;
 };
 
 export const talks: TalkProps[] = [
 	{
 		position: 'start',
 		title: 'Início do credenciamento',
-		time: '08:00',
+		time: '08:30',
 	},
 	{
 		position: 'middle',
@@ -212,7 +212,7 @@ export const speakers: Speaker[] = [
 ];
 
 export const speakersArray = (array: Speaker[]): Speaker[] => {
-  return [...array].sort(() => Math.random() - 0.5);
+	return [...array].sort(() => Math.random() - 0.5);
 };
 
 export const calculateLeft = (index: number): string => {

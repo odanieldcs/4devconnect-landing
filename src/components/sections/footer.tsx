@@ -46,27 +46,7 @@ function Footer() {
 			</Dialog>
 			<footer className="flex flex-col w-full justify-center items-center">
 				<div className="flex flex-col-reverse md:flex-row w-full max-w-7xl justify-between pb-4 md:px-0 md:pb-4">
-					<div className="flex flex-col md:gap-4 items-center w-full">
-						<Heading
-							level="h2"
-							className="text-lg/6 md:text-xl/8 text-center text-primary/45 font-medium"
-						>
-							Realização
-						</Heading>
-						<Link
-							href="https://www.linkedin.com/company/oddevs/"
-							title="DDEV's by Daniel Castro"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img
-								src="/sponsors/ddevs.png"
-								alt="DDEV's, by Daniel Castro"
-								className="overflow-hidden rounded-3xl h-[100px] w-[200px]"
-							/>
-						</Link>
-					</div>
-					<div className="flex flex-col md:gap-4 w-full items-center justify-center">
+					<div className="flex flex-col w-full items-center justify-center">
 						<Heading
 							level="h2"
 							className="text-lg/6 md:text-xl/8 text-center text-primary/45 font-medium"
@@ -111,8 +91,41 @@ function Footer() {
 									className="overflow-hidden rounded-3xl h-[100px] w-[200px]"
 								/>
 							</Link>
+							<Link
+								href="https://www.instagram.com/alessandricomunica/"
+								title="Alessandri - Comunicação Marketing Redes Sociais"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex justify-center"
+							>
+								<img
+									src="/sponsors/alessandri.png"
+									alt="Alessandri - Comunicação Marketing Redes Sociais"
+									className="overflow-hidden rounded-3xl h-[100px] w-[68px]"
+								/>
+							</Link>
 						</div>
 					</div>
+				</div>
+				<div className="flex flex-col items-center w-full">
+					<Heading
+						level="h2"
+						className="text-lg/6 md:text-xl/8 text-center text-primary/45 font-medium"
+					>
+						Realização
+					</Heading>
+					<Link
+						href="https://www.linkedin.com/company/oddevs/"
+						title="DDEV's by Daniel Castro"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="/sponsors/ddevs.png"
+							alt="DDEV's, by Daniel Castro"
+							className="overflow-hidden rounded-3xl h-[100px] w-[200px]"
+						/>
+					</Link>
 				</div>
 				<div className="flex w-full bottom-0 h-18 bg-buidling bg-white bg-repeat-x z-10"></div>
 				<div className="flex flex-col w-full justify-center items-center gap-4 bg-white py-10 text-primary/40 text-xs/6">
