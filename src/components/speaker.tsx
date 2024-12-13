@@ -38,7 +38,7 @@ function Speaker({
 					<Avatar
 						name={collaborator.name}
 						imageUri={collaborator.avatar}
-						className="absolute top-0 left-[3rem]"
+						className="absolute top-0 md:left-[3rem] left-[2rem]"
 					/>
 				)}
 			</div>

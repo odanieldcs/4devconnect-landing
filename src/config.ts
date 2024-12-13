@@ -59,7 +59,7 @@ export const talks: TalkProps[] = [
 			name: 'Ed Pereira',
 			company: 'na Poatek',
 			linkedin: 'https://www.linkedin.com/in/egpereira',
-			role: 'Senior Software Engineer',
+			role: 'Software Engineer Front-end',
 		},
 	},
 	{
