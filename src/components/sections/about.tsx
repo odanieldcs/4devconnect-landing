@@ -1,10 +1,12 @@
 'use client';
 import { speakersArray, Speaker, speakers, calculateLeft } from '@/config';
 import { useEffect, useState } from 'react';
+import { cn } from '@/helpers/misc';
 import { Avatar } from '../avatar';
 import { Heading } from '../heading';
 import { Paragraph } from '../paragraph';
-import { cn } from '@/helpers/misc';
+import { Button } from '../button';
+import { ArrowIcon } from '../icon';
 
 function About() {
 	const [speakersList, setSpeakersList] = useState<Speaker[]>([]);
@@ -41,9 +43,17 @@ function About() {
 							programação.
 						</Paragraph>
 						<Paragraph>
-							Um evento <strong>totalmente gratuito</strong>, mas com vagas
-							limitadas. Garanta já a sua!
+							As fotos oficiais da 1ª edição já estão disponíveis, confira!
 						</Paragraph>
+						<div className="flex justify-center md:justify-start">
+							<Button
+								name="Ver fotos"
+								variant="primary"
+								href="/fotos"
+								rel="noopener noreferrer"
+								endElement={<ArrowIcon direction="right" />}
+							/>
+						</div>
 					</div>
 					<div className="flex relative w-full md:max-w-96 max-w-full h-18">
 						{speakersList.map((speaker, index) => (

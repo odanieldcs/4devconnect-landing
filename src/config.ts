@@ -82,7 +82,7 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Jornada na programação',
+		title: 'Jornada na Programação',
 		description: 'desafios e crescimento',
 		time: '11:30',
 		speaker: {
@@ -113,7 +113,7 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Integrando LLMs e machine learning',
+		title: 'Integrando LLMs e Machine Learning',
 		description: 'em processos de dados',
 		time: '14:25',
 		speaker: {
@@ -136,8 +136,8 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Management application',
-		description: 'com Azion edge computing',
+		title: 'Application Management',
+		description: 'com Azion Edge Computing',
 		time: '15:30',
 		speaker: {
 			avatar: avatars.robson,
@@ -149,7 +149,7 @@ export const talks: TalkProps[] = [
 	},
 	{
 		position: 'middle',
-		title: 'Integrando devs no discovery',
+		title: 'Integrando devs no Discovery',
 		description: 'uma abordagem colaborativa',
 		speaker: {
 			avatar: avatars.rayana,

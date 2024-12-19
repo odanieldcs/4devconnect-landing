@@ -3,8 +3,6 @@ import { Heading } from '../heading';
 import { TagIcon } from '../icon';
 import { Paragraph } from '../paragraph';
 
-import { metadata } from '@/config';
-
 function Hero() {
 	return (
 		<section className="flex justify-center relative w-full h-[280px] md:h-[548px] bg-orange-pink-light px-4 md:px-0 py-8 pb-0 md:py-11">
@@ -20,11 +18,12 @@ function Hero() {
 						14 Dezembro 2024 <span className="md:block">Gravataí/RS</span>
 					</Paragraph>
 					<Button
-						name="Inscreva-se agora!"
+						name="Evento encerrado"
 						variant="primary"
 						target="_blank"
 						rel="noopener noreferrer"
-						href={metadata.subscribeUrl}
+						href="#"
+						disabled
 						startElement={<TagIcon />}
 					/>
 				</div>
